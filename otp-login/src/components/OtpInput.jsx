@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const OtpInput = ({ length = 4, onOtpSubmit = () => {} }) => {
+const OtpInput = ({ length = 6, onOtpSubmit = () => {} }) => {
   const [otp, setOtp] = useState(new Array(length).fill(""));
-
   const inputRef = useRef([]);
 
   const handleChange = (index, e) => {
@@ -23,8 +22,6 @@ const OtpInput = ({ length = 4, onOtpSubmit = () => {} }) => {
       inputRef.current[index + 1].focus();
     }
   };
-
-  console.log(otp);
 
   const handleClick = (index) => {
     inputRef.current[index].setSelectionRange(1, 1);
