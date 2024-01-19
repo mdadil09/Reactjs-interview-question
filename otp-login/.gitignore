@@ -25,4 +25,4 @@ dist-ssr
 
 #Auth
 
-/Auth/firebase.js
+Auth/firebase.js
