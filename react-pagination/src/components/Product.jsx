@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useApi } from "../context/ApiContext";
 
 const Product = () => {

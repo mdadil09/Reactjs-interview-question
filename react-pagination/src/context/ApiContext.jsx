@@ -40,11 +40,8 @@ export const ApiProvider = ({ children }) => {
     <ApiContext.Provider
       value={{
         products,
-        setProducts,
         totalPages,
-        setTotalPages,
         page,
-        setPage,
         selectedPageClick,
       }}
     >
